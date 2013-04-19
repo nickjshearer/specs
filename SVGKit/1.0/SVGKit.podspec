@@ -20,5 +20,6 @@ Pod::Spec.new do |s|
 
   s.ios.source_files = 'Source/*{.h,m}', 'Source/**/*.{h,m}'
   s.libraries = 'xml2'
+  s.framework = 'QuartzCore'
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
 end
